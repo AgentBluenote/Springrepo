@@ -1,19 +1,12 @@
 package com.uciext.springfw.hw.catalog.model;
 
 import java.lang.StringBuilder;
-//import com.uciext.springfw.hw.EStoreApp;
 
 public class Catalog {
-
 	// Properties
     private String lastupdateDate;
     private String catalogName;
     
-    public Catalog(){
-//    	 EStoreApp.logger.info("Estore App - start");
-    	 System.out.println("Constructor::Catalog"); 
-    }
-
     public String gelastupdateDate() {
         return lastupdateDate;
     }
