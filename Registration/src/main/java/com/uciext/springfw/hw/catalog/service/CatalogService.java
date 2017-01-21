@@ -6,3 +6,4 @@ public interface CatalogService {
 	public Catalog getCatalog(String courseId);
 }
 
+

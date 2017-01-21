@@ -15,7 +15,6 @@ package com.uciext.springfw.hw;
 	   
 	   // MIKE wire the constructor
 	   public EStoreApp(){
-		   logger.info(cname);
 		   logger.info("Estore App - start");
 	   } 
 
@@ -25,25 +24,19 @@ package com.uciext.springfw.hw;
 	   } 
 
 	   public static void main(String[] args) throws Exception {
-	      // Get instance of CatalogService class
+		   
+	      logger.info("start: " );
+		  
 	      BeanFactory factory = new XmlBeanFactory(
 	    		  new ClassPathResource("/META-INF/spring/EStoreAppContext.xml"));
 	      
-	      
-	      // inject EStorApp
-//	      EStoreApp eapp = 
-//	    		  (EStoreApp) factory.getBean("eapple");
-
 	      // inject catalog servies
 	      CatalogService catalogService = 
 	    		  (CatalogService) factory.getBean("catalogService");
 
-
 	      // Make a call
 	      Catalog catalog1 = catalogService.getCatalog("Java Books");
-	      logger.info("Catalog mike: \n" + catalog1.toString());
 
-//	      Catalog catalog2 = catalogService.getCatalog("X106");
-//	      logger.info("Catalog X106: \n" + catalog2.toString());
+	      logger.info("Catalog: \n" + catalog1.toString());
 	   }
 }

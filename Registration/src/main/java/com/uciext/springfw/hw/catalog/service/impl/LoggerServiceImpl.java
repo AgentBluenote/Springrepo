@@ -1,18 +1,22 @@
 package com.uciext.springfw.hw.catalog.service.impl;
 
-
+import com.uciext.springfw.hw.catalog.service.LoggingService;
 import org.apache.log4j.Logger;
 
-import com.uciext.springfw.hw.catalog.service.CatalogService;
-import com.uciext.springfw.hw.catalog.model.Catalog;
 
-	public class CatalogServiceImpl implements CatalogService {
+	public class LoggerServiceImpl implements LoggingService {
+		
 
+		public Logger getLogger(String classname){
+			Logger theLogger = Logger.getLogger(this.getClass().getName());
+			return theLogger; 
+		}
+
+		/*
 	    private static Logger logger = Logger.getLogger(
-	    		           CatalogServiceImpl.class.getName());
+	    		CatalogServiceImpl.class.getName());
 
 	    private Catalog catalog1;
-//	    private Catalog course2;
 	    
 		public CatalogServiceImpl() {
 		    logger.info("In CatalogServiceImpl()");
@@ -22,9 +26,6 @@ import com.uciext.springfw.hw.catalog.model.Catalog;
 			if ("Java Books".equals(catalogId)) {
 				return catalog1;
 			}
-//			else if ("X106".equals(courseId)) {
-//				return course2;
-//			}
 			return null;
 		}
 		
@@ -32,9 +33,7 @@ import com.uciext.springfw.hw.catalog.model.Catalog;
 		public void setCatalog1(Catalog value) {
 			catalog1 = value;
 		}
-/*
-		public void setCatalog2(Catalog value) {
-			course2 = value;
-		}
-		*/
-	}
+
+*/
+
+}

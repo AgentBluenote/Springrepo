@@ -6,23 +6,16 @@
 
 
 
-<!-- 
 
-  <bean id="eapple" class="com.uciext.springfw.hw.EStoreApp">
-      <constructor-arg ref="start app" /> 
-  </bean>
-  -->
-
-<!--
-  <bean id="startapp"
-      class="com.uciext.springfw.hw.catalog.model.Catalog">
-      <constructor-arg ref="startapp" /> 
+  <bean id="labeleapp" class="com.uciext.springfw.hw.EStoreApp">
+      <constructor-arg ref="cname" /> 
   </bean>
 
-  <bean id="eapple" class="com.uciext.springfw.hw.EStoreApp">
-      <constructor-arg ref="startapp" /> 
+  <bean id="cname"
+      class="java.lang.String" >
   </bean>
-  -->
+
+
   <bean id="someLabel"
       class="com.uciext.springfw.hw.catalog.model.Catalog">
       <property name="lastupdateDate" value="06/05/2014" /> 
