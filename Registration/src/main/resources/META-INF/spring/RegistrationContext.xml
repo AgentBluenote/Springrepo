@@ -6,13 +6,13 @@
 
   <bean id="courseSpringFW"
       class="com.uciext.springfw.class01.courses.model.Course">
-      <property name="courseId" value="X104" /> 
+      <property name="lastupdateDate" value="X104" /> 
       <property name="courseName" value="Spring Framework" /> 
   </bean>
 
   <bean id="courseJavaWS"
       class="com.uciext.springfw.class01.courses.model.Course">
-      <property name="courseId" value="X106" /> 
+      <property name="lastupdateDate" value="X106" /> 
       <property name="courseName" value="Java Web Services" /> 
   </bean>
 
