@@ -4,14 +4,7 @@
    xsi:schemaLocation="http://www.springframework.org/schema/beans 
        http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
 
-<!--  
-  <bean id="labeleapp" class="com.uciext.springfw.hw.EStoreApp">
-      <constructor-arg ref="cname" /> 
-  </bean>
-
-  -->
-
-  <bean id="someLabel"
+  <bean id="someRef"
       class="com.uciext.springfw.hw.catalog.model.Catalog">
       <property name="lastupdateDate" value="06/05/2014" /> 
       <property name="catalogName" value="Java Books" /> 
@@ -19,9 +12,7 @@
 
   <bean id="catalogService"
       class="com.uciext.springfw.hw.catalog.service.impl.CatalogServiceImpl">
-       <property name="catalog1" ref="someLabel" />   
-
- <!--    <property name="catalog2" ref="catalogJavaWS" />     -->
+       <property name="catalog1" ref="someRef" />   
   </bean>
 
 </beans>
