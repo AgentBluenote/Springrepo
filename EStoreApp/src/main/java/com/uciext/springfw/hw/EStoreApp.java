@@ -16,7 +16,7 @@ public class EStoreApp {
 		   
       logger.info("Start" );
 	  
-      // configure dependancies
+      // Configure dependancies
       BeanFactory factory = new XmlBeanFactory(
     		  new ClassPathResource("/META-INF/spring/EStoreAppContext.xml"));
 	      
