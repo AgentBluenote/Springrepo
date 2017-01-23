@@ -10,6 +10,7 @@
       <property name="catalogName" value="Java Books" /> 
   </bean>
 
+
   <bean id="catalogService"
       class="com.uciext.springfw.hw.catalog.service.impl.CatalogServiceImpl">
        <property name="catalog1" ref="someRef" />   
