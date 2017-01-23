@@ -1,3 +1,16 @@
+Note to instructor:
+
+I was able to get my project working using the following tools:
+
+Devlopment Environment: Eclipse Neon.2 IDE
+Build tools           : jdk1.8.0_102
+Revision Control      : git and GitHub
+
+
+
+
+
+
 Create a new project Registration
 Import folders: lib, src, config, 
 Go to Project Properties >> Java Build Path >> Libraries >> add jars > add jars from the lib folder
